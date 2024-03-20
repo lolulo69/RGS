@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <main className="flex flex-col md:max-w-7xl max-w-[90%] mx-auto">
         <div className="flex md:flex-row flex-col justify-between md:items-center md:my-8 ">
-          <h1 className="md:text-7xl text-[42px] font-title text-left text-gray-800 leading-tight -mx-[3%] md:mx-0">
+          <h1 className="md:text-7xl text-[42px] font-title text-left text-gray-800 md:leading-tight leading-tight -mx-[3%] md:mx-0">
             {`Bureau d'étude technique`}
             <br />
             {`Maître d'œuvre`}
