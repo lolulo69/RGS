@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "./images/hero.webp";
+import hero from "./images/hero.jpg";
 import { ProjectsSection } from "./components/ProjectsSection";
 
 export default function Home() {
