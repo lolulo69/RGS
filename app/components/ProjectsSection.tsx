@@ -14,9 +14,9 @@ export const ProjectsSection = async () => {
   return (
     <section
       id="projets"
-      className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 md:max-w-7xl"
+      className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 xl:max-w-7xl"
     >
-      <h2 className="font-title text-left text-4xl leading-tight text-gray-800 md:text-6xl">
+      <h2 className="text-left font-title text-4xl leading-tight text-gray-800 md:text-6xl">
         {`Nos projets`}
       </h2>
       <div className="mt-8 flex flex-row flex-wrap items-center justify-between gap-4">
@@ -37,7 +37,7 @@ export const ProjectsSection = async () => {
                 <div className="flex cursor-pointer flex-row items-end gap-2 bg-gray-100 p-4 transition-colors ease-in-out hover:bg-gray-200 hover:drop-shadow-2xl">
                   <div className="flex flex-col gap-2">
                     <h3
-                      className="font-title -mr-9 text-left text-xl leading-tight text-gray-800 md:text-2xl"
+                      className="-mr-9 text-left font-title text-xl leading-tight text-gray-800 md:text-2xl"
                       dangerouslySetInnerHTML={{ __html: post.title }}
                     ></h3>
                     <div

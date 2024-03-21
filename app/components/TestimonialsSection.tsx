@@ -4,8 +4,8 @@ import Image from "next/image";
 export const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="w-full bg-gray-100">
-      <div className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 md:max-w-7xl">
-        <h2 className="font-title text-left text-4xl leading-tight text-gray-800 md:text-6xl">
+      <div className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 xl:max-w-7xl">
+        <h2 className="text-left font-title text-4xl leading-tight text-gray-800 md:text-6xl">
           {`Ils parlent de nous`}
         </h2>
         <div className="mt-8 flex w-full flex-col flex-wrap items-center justify-between gap-4 md:flex-row">
