@@ -8,10 +8,10 @@ export default function Home() {
     <>
       <main className="mx-auto flex max-w-[90%] flex-col xl:max-w-7xl">
         <div className="flex flex-col justify-between md:my-8 md:flex-row md:items-center ">
-          <h1 className="animate-fadeInLeft -mx-[3%] text-left font-title text-[42px] leading-tight text-gray-800 md:mx-0 md:text-7xl md:leading-tight">
-            {`Bureau d'étude technique`}
+          <h1 className="-mx-[3%] animate-fadeInLeft text-left font-title text-[42px] leading-tight text-gray-800 md:mx-0 md:text-7xl md:leading-tight">
+            {`Construire l'avenir`}
             <br />
-            {`Maître d'œuvre`}
+            {`Démolir les limites`}
           </h1>
           <div className="flex flex-col items-center gap-4 md:max-w-[40%] md:items-end">
             <p className="animate-fadeInRight text-gray-600 md:text-lg">
@@ -19,7 +19,7 @@ export default function Home() {
             </p>
             <a
               href="#"
-              className="animate-pop w-fit transform-gpu rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white md:text-lg"
+              className="w-fit transform-gpu animate-pop rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white md:text-lg"
             >
               {`Contactez nous`}
             </a>
@@ -32,12 +32,12 @@ export default function Home() {
             alt="Bureau d'étude technique"
             width={1920}
             height={1080}
-            className="animate-zoom-out mt-6 h-[500px] w-full object-cover"
+            className="mt-6 h-[500px] w-full animate-zoom-out object-cover"
           />
         </div>
       </main>
       <div className="-mt-28 bg-sky-900 pb-12 pt-32">
-        <div className="animate-appear items-top mx-auto flex max-w-[90%] flex-col justify-around gap-12 py-8 delay-200 md:max-w-7xl md:flex-row md:gap-0">
+        <div className="items-top mx-auto flex max-w-[90%] animate-appear flex-col justify-around gap-12 py-8 delay-200 md:max-w-7xl md:flex-row md:gap-0">
           <div className=" flex flex-col md:max-w-[40%]">
             <h2 className="text-left font-title text-2xl leading-tight text-gray-100 md:text-4xl">
               {`Nos services`}
