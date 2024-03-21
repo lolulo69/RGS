@@ -10,7 +10,7 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col gap-2">
         <p className="text-gray-200">
-          {"RGS - Construire l'avenir, démolir les limites."}
+          {"RGS - Bâtir l'avenir, démolir les limites."}
         </p>
         <p className="text-gray-200">© 2024 RGS. Tous droits réservés.</p>
       </div>

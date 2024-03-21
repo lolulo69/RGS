@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <main className="mx-auto flex max-w-[90%] flex-col xl:max-w-7xl">
         <div className="flex flex-col justify-between md:my-8 md:flex-row md:items-center ">
-          <h1 className="-mx-[3%] animate-fadeInLeft text-left font-title text-[42px] leading-tight text-gray-800 md:mx-0 md:text-7xl md:leading-tight">
-            {`Construire l'avenir`}
+          <h1 className="animate-fadeInLeft text-left font-title text-[44px] leading-tight text-gray-800 md:text-7xl md:leading-tight">
+            {`Bâtir l'avenir`}
             <br />
             {`Démolir les limites`}
           </h1>
