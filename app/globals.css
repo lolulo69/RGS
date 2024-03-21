@@ -25,3 +25,46 @@
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.clip {
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    60% 100%,
+    60% 0,
+    100% 0,
+    100% 20%,
+    45% 20%,
+    45% 100%,
+    100% 100%,
+    100% 0%
+  );
+}
+
+.clipMobile {
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    75% 100%,
+    75% 0,
+    100% 0,
+    100% 20%,
+    45% 20%,
+    45% 100%,
+    100% 100%,
+    100% 0%
+  );
+}
+
+.slide-6 {
+  animation: slide-6 1s infinite alternate both cubic-bezier(1, -0.01, 0, 0.98);
+}
+@keyframes slide-6 {
+  100% {
+    transform: translateX(2px);
+  }
+}

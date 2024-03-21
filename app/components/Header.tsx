@@ -4,26 +4,38 @@ import logo from "../images/logo.png";
 
 export const Header = () => {
   return (
-    <header className="flex flex-row justify-between items-center max-w-7xl mx-auto bg-sky-950 p-3 px-6 md:my-8 mb-8">
+    <header className="mx-auto mb-8 flex max-w-7xl flex-row items-center justify-between bg-sky-950 p-3 px-6 md:my-8">
       <div className="flex flex-row items-center gap-2">
         <Image src={logo} alt="Logo de RGS" width={40} height={40} />
       </div>
 
-      <nav className="md:flex hidden flex-row gap-8 ">
-        <a href="/" className="text-gray-200">
+      <nav className="hidden flex-row gap-0 md:flex ">
+        <a
+          href="/"
+          className="rounded-sm p-3 px-5 font-medium text-gray-200 transition-colors ease-in hover:bg-sky-900"
+        >
           Accueil
         </a>
-        <a href="#" className="text-gray-200">
+        <a
+          href="#"
+          className="rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900"
+        >
           Services
         </a>
-        <a href="#" className="text-gray-200">
+        <a
+          href="#projets"
+          className="rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900"
+        >
           Projets
         </a>
-        <a href="#" className="text-gray-200">
+        <a
+          href="#"
+          className="rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900"
+        >
           Contact
         </a>
       </nav>
-      <div className="w-[40px] flex justify-end">
+      <div className="flex w-[40px] justify-end">
         <button className="text-gray-200 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
