@@ -30,7 +30,7 @@ export const Header = () => {
           Projets
         </a>
         <a
-          href="#"
+          href="/contact"
           className="rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900"
         >
           Contact
