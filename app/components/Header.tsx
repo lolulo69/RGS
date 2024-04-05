@@ -18,13 +18,13 @@ export const Header = () => {
           Accueil
         </a>
         <a
-          href="#"
+          href="/actualites"
           className="rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900"
         >
-          Services
+          Actualités
         </a>
         <a
-          href="#projets"
+          href="/projets"
           className="rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900"
         >
           Projets

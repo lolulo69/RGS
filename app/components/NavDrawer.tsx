@@ -32,13 +32,13 @@ export const NavDrawer = () => {
               {`Accueil`}
             </a>
             <a
-              href="#"
+              href="/actualites"
               className="text-lg font-medium text-gray-100 hover:text-white"
             >
-              {`Services`}
+              {`Actualités`}
             </a>
             <a
-              href="#projets"
+              href="/projets"
               className="text-lg font-medium text-gray-100 hover:text-white"
             >
               {`Projets`}
