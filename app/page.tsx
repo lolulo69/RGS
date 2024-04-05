@@ -18,7 +18,7 @@ export default function Home() {
               {`Chez RGS, nous transformons les visions en réalité. Avec plus de 4 années d'expertise dans le secteur de la construction, nous nous engageons à apporter excellence, innovation et sécurité à chaque projet.`}
             </p>
             <a
-              href="#"
+              href="/contact"
               className="w-fit transform-gpu animate-pop rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white md:text-lg"
             >
               {`Contactez nous`}

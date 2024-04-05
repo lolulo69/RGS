@@ -44,7 +44,7 @@ export const NavDrawer = () => {
               {`Projets`}
             </a>
             <a
-              href="#"
+              href="/contact"
               className="text-lg font-medium text-gray-100 hover:text-white"
             >
               {`Contact`}
