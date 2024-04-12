@@ -17,7 +17,7 @@ export const ProjectsSection = async () => {
       id="projets"
       className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 xl:max-w-7xl"
     >
-      <h2 className="text-left font-title text-4xl leading-tight text-gray-800 md:text-6xl">
+      <h2 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
         {`Nos projets`}
       </h2>
       <div className="mt-8 flex flex-row flex-wrap items-center justify-between gap-4">
@@ -28,7 +28,7 @@ export const ProjectsSection = async () => {
             return (
               <div
                 key={post.title}
-                className="relative flex h-[600px] w-full flex-col md:h-[800px] md:w-[48%]"
+                className="relative flex h-[600px] w-full flex-col lg:h-[800px] lg:w-[48%]"
               >
                 <Image
                   src={post.featured_image as string}
@@ -37,22 +37,22 @@ export const ProjectsSection = async () => {
                   height={1200}
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute bottom-8 left-8 right-20 drop-shadow-xl md:right-44">
+                <div className="absolute bottom-8 left-8 right-20 drop-shadow-xl lg:right-44">
                   <a
                     href={`/projets/${post.slug}`}
                     className="flex cursor-pointer flex-row items-end gap-2 bg-gray-100 p-4 transition-colors ease-in-out hover:bg-gray-200 hover:drop-shadow-2xl"
                   >
                     <div className="flex flex-col gap-2">
                       <h3
-                        className="-mr-9 text-left font-title text-xl leading-tight text-gray-800 md:text-2xl"
+                        className="-mr-9 text-left font-title text-xl leading-tight text-gray-800 lg:text-2xl"
                         dangerouslySetInnerHTML={{ __html: post.title }}
                       ></h3>
                       <div
-                        className="text-sm text-gray-600 md:text-base"
+                        className="text-sm text-gray-600 lg:text-base"
                         dangerouslySetInnerHTML={{ __html: post.excerpt }}
                       ></div>
                     </div>
-                    <div className="flex w-7 md:w-8">
+                    <div className="flex w-7 lg:w-8">
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -85,10 +85,10 @@ export const ProjectsSection = async () => {
             );
           })}
         {posts.length > 2 && (
-          <div className="flex h-[200px] w-full flex-col items-center justify-center md:h-[800px] md:w-[48%]">
+          <div className="flex h-[200px] w-full flex-col items-center justify-center lg:h-[800px] lg:w-[48%]">
             <a
               href="/projets"
-              className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white md:text-lg"
+              className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white lg:text-lg"
             >
               {`Découvrir tous nos projets`}
             </a>

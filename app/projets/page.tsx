@@ -8,7 +8,7 @@ const page = async () => {
   const posts = await fetchPosts(CATEGORY);
   return (
     <main className="mx-auto flex max-w-[90%] flex-col gap-8 pb-16 xl:max-w-7xl">
-      <h1 className="text-left font-title text-4xl leading-tight text-gray-800 md:text-6xl">
+      <h1 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
         {`Nos projets`}
       </h1>
       {posts.map((post: Post) => (

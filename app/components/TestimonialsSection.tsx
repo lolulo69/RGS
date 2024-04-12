@@ -5,11 +5,11 @@ export const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="w-full bg-gray-100">
       <div className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 xl:max-w-7xl">
-        <h2 className="text-left font-title text-4xl leading-tight text-gray-800 md:text-6xl">
+        <h2 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
           {`Ils parlent de nous`}
         </h2>
-        <div className="mt-8 flex w-full flex-col flex-wrap items-center justify-between gap-4 md:flex-row">
-          <div className="flex w-full flex-col border border-gray-800 p-6 md:max-w-[48%] md:px-10">
+        <div className="mt-8 flex w-full flex-col flex-wrap items-center justify-between gap-4 lg:flex-row">
+          <div className="flex w-full flex-col border border-gray-800 p-6 lg:max-w-[48%] lg:px-10">
             <p className="text-gray-500">
               {`J’ai fait appel aux services de RGS pour un chantier de 3 semaines. J’ai fait confiance à cette entreprise car je connaissais les qualités de son dirigeant depuis plusieurs années dans ma vie professionnelle. Ses conseils, son organisation et ses collaborateurs ont été à la hauteur pour mener à bien le chantier avec une écoute me permettant d’être entière satisfait en particulier sur Les délais, la qualité et le respect du prix du devis . Je recommande !`}
             </p>
@@ -71,7 +71,7 @@ export const TestimonialsSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col border border-gray-800 p-6 md:max-w-[48%] md:px-10">
+          <div className="flex w-full flex-col border border-gray-800 p-6 lg:max-w-[48%] lg:px-10">
             <p className="text-gray-500">
               {`Radu est un professionnel dans son domaine. Il travaille consciencieusement, sérieusement, comme pour lui-même. Je recommande!`}
             </p>

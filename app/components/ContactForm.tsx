@@ -75,12 +75,12 @@ export const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(sendEmail)}
-      className="mb-6 flex flex-col gap-4 md:h-[400px] md:w-[60%]"
+      className="mb-6 flex flex-col gap-4 lg:h-[400px] lg:w-[60%]"
     >
       <p className="text-lg text-gray-600">
         Vous avez une question ou un projet en tête ?
       </p>
-      <div className="flex flex-col gap-2 md:flex-row">
+      <div className="flex flex-col gap-2 lg:flex-row">
         <div className="flex w-full flex-col gap-1">
           <Label htmlFor="name">Nom complet</Label>
           <Input
@@ -126,7 +126,7 @@ export const ContactForm: React.FC = () => {
         />
         {errors.subject && <p>{errors.subject.message}</p>}
       </div>
-      <div className="flex h-32 min-h-32 flex-col gap-1 md:h-full">
+      <div className="flex h-32 min-h-32 flex-col gap-1 lg:h-full">
         <Label htmlFor="message">Message</Label>
         <Textarea
           placeholder="Bonjour, j'aimerais..."
