@@ -11,7 +11,7 @@ export interface Post {
 }
 
 export const ProjectsSection = async () => {
-  const posts = await fetchPosts();
+  const posts = await fetchPosts("projets");
   return (
     <section
       id="projets"
@@ -84,14 +84,16 @@ export const ProjectsSection = async () => {
               </div>
             );
           })}
-        <div className="flex h-[200px] w-full flex-col items-center justify-center md:h-[800px] md:w-[48%]">
-          <a
-            href="/projets"
-            className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white md:text-lg"
-          >
-            {`Découvrir tous nos projets`}
-          </a>
-        </div>
+        {posts.length > 2 && (
+          <div className="flex h-[200px] w-full flex-col items-center justify-center md:h-[800px] md:w-[48%]">
+            <a
+              href="/projets"
+              className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white md:text-lg"
+            >
+              {`Découvrir tous nos projets`}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
