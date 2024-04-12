@@ -9,7 +9,7 @@ export const TestimonialsSection = () => {
           {`Ils parlent de nous`}
         </h2>
         <div className="mt-8 flex w-full flex-col flex-wrap items-center justify-between gap-4 md:flex-row">
-          <div className="flex w-full flex-col border border-gray-800 p-6 px-10 md:max-w-[48%]">
+          <div className="flex w-full flex-col border border-gray-800 p-6 md:max-w-[48%] md:px-10">
             <p className="text-gray-500">
               {`J’ai fait appel aux services de RGS pour un chantier de 3 semaines. J’ai fait confiance à cette entreprise car je connaissais les qualités de son dirigeant depuis plusieurs années dans ma vie professionnelle. Ses conseils, son organisation et ses collaborateurs ont été à la hauteur pour mener à bien le chantier avec une écoute me permettant d’être entière satisfait en particulier sur Les délais, la qualité et le respect du prix du devis . Je recommande !`}
             </p>
@@ -71,7 +71,7 @@ export const TestimonialsSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col border border-gray-800 p-6 px-10 md:max-w-[48%]">
+          <div className="flex w-full flex-col border border-gray-800 p-6 md:max-w-[48%] md:px-10">
             <p className="text-gray-500">
               {`Radu est un professionnel dans son domaine. Il travaille consciencieusement, sérieusement, comme pour lui-même. Je recommande!`}
             </p>

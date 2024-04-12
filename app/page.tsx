@@ -2,6 +2,7 @@ import Image from "next/image";
 import hero from "./images/hero.jpg";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
+import { ActualitesSection } from "./components/ActualitesSection";
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <ActualitesSection />
       <ProjectsSection />
       <TestimonialsSection />
     </>
