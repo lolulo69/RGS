@@ -75,7 +75,7 @@ export const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(sendEmail)}
-      className="flex h-[400px] max-h-full flex-col gap-4 md:w-[60%]"
+      className="mb-6 flex flex-col gap-4 md:h-[400px] md:w-[60%]"
     >
       <p className="text-lg text-gray-600">
         Vous avez une question ou un projet en tête ?
@@ -126,13 +126,13 @@ export const ContactForm: React.FC = () => {
         />
         {errors.subject && <p>{errors.subject.message}</p>}
       </div>
-      <div className="flex h-full flex-col gap-1">
+      <div className="flex h-32 min-h-32 flex-col gap-1 md:h-full">
         <Label htmlFor="message">Message</Label>
         <Textarea
           placeholder="Bonjour, j'aimerais..."
           {...register("message")}
           id="message"
-          className="h-full border-gray-300"
+          className="h-full grow border-gray-300"
         />
         {errors.message && <p>{errors.message.message}</p>}
       </div>
