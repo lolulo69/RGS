@@ -9,6 +9,12 @@ module.exports = {
       },
       {
         protocol: "https",
+        hostname: "lolulo1337.wordpress.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "randomuser.me",
         port: "",
         pathname: "/**",

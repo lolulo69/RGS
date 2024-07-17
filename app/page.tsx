@@ -16,7 +16,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col items-center gap-4 lg:max-w-[40%] lg:items-end">
             <p className="animate-fadeInRight text-gray-600 lg:text-lg">
-              {`Chez RGS, nous transformons les visions en réalité. Avec plus de 4 années d'expertise dans le secteur de la construction, nous nous engageons à apporter excellence, innovation et sécurité à chaque projet.`}
+              {`Entreprise RGS se spécialise dans la démolition, le curage, la déconstruction sélective, l'isolation des planchers, dalles et murs, ainsi que la fourniture et la pose de menuiseries extérieures. Nous sommes déterminés à utiliser des pratiques durables et respectueuses de l'environnement.`}
             </p>
             <a
               href="/contact"
@@ -41,18 +41,18 @@ export default function Home() {
         <div className="items-top mx-auto flex max-w-[90%] animate-appear flex-col justify-around gap-12 py-8 delay-200 lg:max-w-7xl lg:flex-row lg:gap-0">
           <div className=" flex flex-col lg:max-w-[40%]">
             <h2 className="text-left font-title text-2xl leading-tight text-gray-100 lg:text-4xl">
-              {`Nos services`}
+              {`Notre mission`}
             </h2>
             <p className="text-gray-100 lg:text-lg">
-              {`Chez RGS, nous offrons une gamme complète de services de conception et de construction pour répondre à tous vos besoins. De la planification initiale à la gestion de projet, nous sommes là pour vous aider à chaque étape du processus. Découvrez comment nous pouvons vous aider à réaliser vos rêves de construction dès aujourd'hui.`}
+              {`Offrir des solutions spécifiques et durables en démolition, déconstruction sélective, isolation et menuiseries extérieures pour répondre aux besoins actuels et futurs de nos clients.`}
             </p>
           </div>
           <div className="flex flex-col lg:max-w-[40%]">
             <h2 className="text-left font-title text-2xl leading-tight text-gray-100 lg:text-4xl">
-              {`Nos métiers`}
+              {`Notre vision`}
             </h2>
             <p className="text-gray-100 lg:text-lg">
-              {`Chez RGS, l'excellence se construit ensemble. Nos équipes sont au cœur de chaque projet, apportant leur savoir-faire unique pour répondre aux défis les plus complexes. Notre expertise s'étend à travers plusieurs domaines clés`}
+              {`Être reconnu pour notre expertise technique et notre engagement environnemental dans chaque projet de démolition, isolation et menuiserie extérieure.`}
             </p>
           </div>
         </div>
