@@ -16,7 +16,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col items-center gap-4 lg:max-w-[40%] lg:items-end">
             <p className="animate-fadeInRight text-gray-600 lg:text-lg">
-              {`Entreprise RGS se spécialise dans la démolition, le curage, la déconstruction sélective, l'isolation des planchers, dalles et murs, ainsi que la fourniture et la pose de menuiseries extérieures. Nous sommes déterminés à utiliser des pratiques durables et respectueuses de l'environnement.`}
+              {`Entreprise RGS est spécialisé dans la démolition, le curage, la déconstruction sélective, l'isolation des planchers, dalles et murs, ainsi que la fourniture et la pose de menuiseries extérieures. Nous sommes déterminés à utiliser des pratiques durables et respectueuses de l'environnement.`}
             </p>
             <a
               href="/contact"
@@ -44,7 +44,7 @@ export default function Home() {
               {`Notre mission`}
             </h2>
             <p className="text-gray-100 lg:text-lg">
-              {`Offrir des solutions spécifiques et durables en démolition, déconstruction sélective, isolation et menuiseries extérieures pour répondre aux besoins actuels et futurs de nos clients.`}
+              {`Offrir des solutions spécifiques et durables pour répondre aux besoins actuels et futurs de nos clients.`}
             </p>
           </div>
           <div className="flex flex-col lg:max-w-[40%]">
@@ -52,7 +52,7 @@ export default function Home() {
               {`Notre vision`}
             </h2>
             <p className="text-gray-100 lg:text-lg">
-              {`Être reconnu pour notre expertise technique et notre engagement environnemental dans chaque projet de démolition, isolation et menuiserie extérieure.`}
+              {`Être reconnu pour notre expertise technique et notre engagement environnemental dans chaque projet.`}
             </p>
           </div>
         </div>
