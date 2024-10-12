@@ -1,9 +1,9 @@
 // Fetches posts from wordpress.com api
 export const fetchPosts = async (categorySlug?: string) => {
   let URL =
-    "https://public-api.wordpress.com/rest/v1.1/sites/lolulo1337.wordpress.com/posts";
+    "https://public-api.wordpress.com/rest/v1.1/sites/rgssas.wordpress.com/posts";
   if (categorySlug) {
-    URL = `https://public-api.wordpress.com/rest/v1.1/sites/lolulo1337.wordpress.com/posts?category=${categorySlug}`;
+    URL = `https://public-api.wordpress.com/rest/v1.1/sites/rgssas.wordpress.com/posts?category=${categorySlug}`;
   }
   const res = await fetch(URL, { cache: "no-store" });
   // The return value is *not* serialized
@@ -20,7 +20,7 @@ export const fetchPosts = async (categorySlug?: string) => {
 
 export const fetchOnePost = async (postSlug: string) => {
   const res = await fetch(
-    `https://public-api.wordpress.com/rest/v1.1/sites/lolulo1337.wordpress.com/posts/slug:${postSlug}`,
+    `https://public-api.wordpress.com/rest/v1.1/sites/rgssas.wordpress.com/posts/slug:${postSlug}`,
     { cache: "no-store" },
   );
   // The return value is *not* serialized

@@ -3,13 +3,13 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "lolulo1337.files.wordpress.com",
+        hostname: "rgssas.files.wordpress.com",
         port: "",
         pathname: "/**",
       },
       {
         protocol: "https",
-        hostname: "lolulo1337.wordpress.com",
+        hostname: "rgssas.wordpress.com",
         port: "",
         pathname: "/**",
       },
