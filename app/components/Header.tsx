@@ -33,6 +33,12 @@ export const Header = () => {
           Projets
         </a>
         <a
+          href="/realisations"
+          className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/realisations" ? "font-medium" : ""}`}
+        >
+          Réalisations
+        </a>
+        <a
           href="/contact"
           className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/contact" ? "font-medium" : ""}`}
         >

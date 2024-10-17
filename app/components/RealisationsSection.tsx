@@ -10,15 +10,15 @@ export interface Post {
   slug: string;
 }
 
-export const ActualitesSection = async () => {
-  const posts = await fetchPosts("actualites");
+export const RealisationsSection = async () => {
+  const posts = await fetchPosts("realisations");
   return (
     <section
-      id="actualites"
+      id="realisations"
       className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-0 lg:pb-24 xl:max-w-7xl"
     >
       <h2 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
-        {`Nos actus`}
+        {`Nos réalisations`}
       </h2>
       <div className="mt-8 flex w-full flex-row flex-wrap items-center justify-start gap-4">
         {posts
@@ -28,7 +28,7 @@ export const ActualitesSection = async () => {
             return (
               <a
                 key={post.title}
-                href={`/actualites/${post.slug}`}
+                href={`/realisations/${post.slug}`}
                 className="flex h-full max-h-[600px] w-full cursor-pointer flex-col gap-8 bg-gray-100 p-8 transition-colors ease-in-out hover:bg-gray-50 hover:drop-shadow-2xl lg:w-[32%]"
               >
                 <Image
@@ -54,10 +54,10 @@ export const ActualitesSection = async () => {
         {posts.length > 1 && (
           <div className="flex h-[200px] w-full flex-col items-center justify-center lg:h-[600px] lg:w-[32%]">
             <a
-              href="/actualites"
+              href="/realisations"
               className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white lg:text-lg"
             >
-              {`Consulter toutes nos actus`}
+              {`Consulter toutes nos réalisations`}
             </a>
           </div>
         )}

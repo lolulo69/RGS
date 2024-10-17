@@ -134,6 +134,15 @@ export const TestimonialsSection = () => {
             </div>
           </div>
         </div>
+        <div className="mt-8 flex w-full items-center justify-center">
+          <a
+            href="https://www.google.com/search?cs=1&hl=fr-FR&rlz=1C1ONGR_enFR1093FR1093&sca_esv=b178d4c9b009a105&output=search&tbm=lcl&kgmid=/g/11sb750khf&q=RGS&shndl=30&source=sh/x/kp/local/m1/1&kgs=da31114f68438f9d#lkt=LocalPoiReviews&rlfi=hd:;si:15447330774638252319,l,ChBSR1MgTGEgTWFkZWxlaW5lkgEVZGVtb2xpdGlvbl9jb250cmFjdG9y;mv:[[50.661495177319026,3.06633051924338],[50.66113522268096,3.0657626807566207]]"
+            target="_blank"
+            className="mt-8 w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white lg:text-lg"
+          >
+            Voir nos autres avis sur Google
+          </a>
+        </div>
       </div>
     </section>
   );
