@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "./images/hero.jpg";
+import hero from "./images/hero.webp";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
 import { ActualitesSection } from "./components/ActualitesSection";
