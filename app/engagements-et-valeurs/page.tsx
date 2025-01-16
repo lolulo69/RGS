@@ -48,74 +48,80 @@ const valeurs = [
 
 const page = () => {
   return (
-    <main className="mx-auto flex max-w-[90%] flex-col gap-4 pb-16 xl:max-w-7xl">
-      <h1 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
-        Nos Engagements et Valeurs
-      </h1>
-      <p className="text-gray-600">
-        Chez <b>RGS</b>, nous plaçons vos attentes et la qualité de nos
-        prestations au cœur de nos priorités.
-        <br />
-        Notre approche repose sur des engagements solides et des valeurs qui
-        guident chacune de nos actions.
-      </p>
-      <section className="mt-4 flex flex-col gap-8 lg:flex-row">
-        <div className="flex flex-col gap-4 lg:w-1/2">
-          <h2 className="text-xl font-semibold text-gray-800 lg:mb-2">
-            Nos Engagements
-          </h2>
-          {engagements.map((engagement, index) => (
-            <div key={index} className="flex flex-col gap-2">
-              <h3 className="text-lg font-semibold text-gray-800">
-                {`${index + 1}. ${engagement.title}`}
-              </h3>
-              <p className="whitespace-pre-line text-gray-600">
-                {engagement.description}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-col gap-4 lg:w-1/2">
-          <h2 className="text-xl font-semibold text-gray-800 lg:mb-2">
-            Nos Valeurs
-          </h2>
-          {valeurs.map((valeur, index) => (
-            <div key={index} className="flex flex-col gap-2">
-              <h3 className="text-lg font-semibold text-gray-800">
-                {`${index + 1}. ${valeur.title}`}
-              </h3>
-              <p className="text-gray-600">{valeur.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-      <div className="-mx-[10%] mt-8 bg-sky-900 px-[10%] py-8">
-        <h2 className="mb-2 text-xl font-semibold text-gray-100">
-          Un Partenaire de Confiance
-        </h2>
-        <p className="text-gray-100">
-          Choisir <b>RGS</b>, c&#39;est opter pour un partenaire fiable, engagé
-          et passionné par son métier. Que ce soit pour des travaux de curage,
-          de démolition ou de rénovation, nous mettons tout en œuvre pour bâtir
-          une relation de confiance durable avec nos clients.
+    <main className="flex flex-col gap-4 pb-16">
+      <div className="mx-auto flex max-w-[90%] flex-col gap-4 xl:max-w-7xl">
+        <h1 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
+          Nos Engagements et Valeurs
+        </h1>
+        <p className="text-gray-600">
+          Chez <b>RGS</b>, nous plaçons vos attentes et la qualité de nos
+          prestations au cœur de nos priorités.
+          <br />
+          Notre approche repose sur des engagements solides et des valeurs qui
+          guident chacune de nos actions.
         </p>
+        <section className="mt-4 flex flex-col gap-8 lg:flex-row">
+          <div className="flex flex-col gap-4 lg:w-1/2">
+            <h2 className="text-xl font-semibold text-gray-800 lg:mb-2">
+              Nos Engagements
+            </h2>
+            {engagements.map((engagement, index) => (
+              <div key={index} className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {`${index + 1}. ${engagement.title}`}
+                </h3>
+                <p className="whitespace-pre-line text-gray-600">
+                  {engagement.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col gap-4 lg:w-1/2">
+            <h2 className="text-xl font-semibold text-gray-800 lg:mb-2">
+              Nos Valeurs
+            </h2>
+            {valeurs.map((valeur, index) => (
+              <div key={index} className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {`${index + 1}. ${valeur.title}`}
+                </h3>
+                <p className="text-gray-600">{valeur.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+      <div className="mt-8 bg-sky-900 py-8">
+        <div className="mx-auto max-w-[90%] xl:max-w-7xl">
+          <h2 className="mb-2 text-xl font-semibold text-gray-100">
+            Un Partenaire de Confiance
+          </h2>
+          <p className="text-gray-100">
+            Choisir <b>RGS</b>, c&#39;est opter pour un partenaire fiable,
+            engagé et passionné par son métier. Que ce soit pour des travaux de
+            curage, de démolition ou de rénovation, nous mettons tout en œuvre
+            pour bâtir une relation de confiance durable avec nos clients.
+          </p>
+        </div>
       </div>
 
-      <div className="lg:mt-8">
-        <h2 className="mb-2 text-xl font-semibold text-gray-800">
-          Prêts à travailler ensemble ?
-        </h2>
-        <p className="text-gray-600">
-          <b>Contactez-nous dès aujourd&#39;hui</b> pour en savoir plus sur nos
-          engagements et discuter de vos projets.
-        </p>
-        <div className="mt-8 flex w-full items-center justify-center">
-          <a
-            href="/contact"
-            className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white lg:text-lg"
-          >
-            Contactez-nous
-          </a>
+      <div className="mx-auto mt-6 flex max-w-[90%] flex-col gap-4 xl:max-w-7xl">
+        <div className="lg:mt-8">
+          <h2 className="mb-2 text-xl font-semibold text-gray-800">
+            Prêts à travailler ensemble ?
+          </h2>
+          <p className="text-gray-600">
+            <b>Contactez-nous dès aujourd&#39;hui</b> pour en savoir plus sur
+            nos engagements et discuter de vos projets.
+          </p>
+          <div className="mt-8 flex w-full items-center justify-center">
+            <a
+              href="/contact"
+              className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white lg:text-lg"
+            >
+              Contactez-nous
+            </a>
+          </div>
         </div>
       </div>
     </main>
