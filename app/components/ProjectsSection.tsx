@@ -11,7 +11,7 @@ export interface Post {
 }
 
 export const ProjectsSection = async () => {
-  const posts = await fetchPosts("projets");
+  const posts = await fetchPosts("realisations");
   return (
     <section
       id="realisations"
@@ -45,7 +45,7 @@ export const ProjectsSection = async () => {
                 />
                 <div className="absolute bottom-8 left-8 right-20 drop-shadow-xl lg:right-44">
                   <a
-                    href={`/projets/${post.slug}`}
+                    href={`/realisations/${post.slug}`}
                     className="flex cursor-pointer flex-row items-end gap-2 bg-gray-100 p-4 transition-colors ease-in-out hover:bg-gray-200 hover:drop-shadow-2xl"
                   >
                     <div className="flex flex-col gap-2">
@@ -96,7 +96,7 @@ export const ProjectsSection = async () => {
               href="/projets"
               className="w-fit rounded-xl bg-sky-950 px-4 py-2 text-base font-semibold text-gray-100 transition-colors duration-300 ease-in-out hover:bg-sky-900 hover:text-white lg:text-lg"
             >
-              {`Découvrir tous nos projets`}
+              {`Découvrir tous nos projets réalisés`}
             </a>
           </div>
         )}
