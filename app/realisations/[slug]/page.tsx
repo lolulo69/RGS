@@ -1,7 +1,8 @@
-import { detectImageGroups } from "@/app/components/GroupImagesAndDisplayCarousel";
+import parse, { Element } from "html-react-parser";
 import { fetchOnePost } from "@/utils/fetchPosts";
 import Image from "next/image";
 import React from "react";
+import { Carousel, ImageData } from "@/app/components/Carousel";
 
 type Post = {
   title: string;
@@ -13,6 +14,40 @@ type Params = {
   params: {
     slug: string;
   };
+};
+
+const detectImageGroups = (htmlContent: string): React.ReactNode => {
+  const parsedContent = parse(htmlContent, {
+    replace: (domNode) => {
+      if (
+        domNode instanceof Element &&
+        domNode.tagName === "figure" &&
+        domNode.attribs.class?.includes("wp-block-gallery")
+      ) {
+        const images = Array.from(domNode.children)
+          .filter(
+            (child) => child instanceof Element && child.tagName === "figure",
+          )
+          .map((figure) => {
+            const img = (figure as Element).children.find(
+              (child) => child instanceof Element && child.tagName === "img",
+            ) as Element | undefined;
+            return img
+              ? {
+                  src: img.attribs.src,
+                  alt: img.attribs.alt || "",
+                }
+              : null;
+          })
+          .filter((image): image is ImageData => image !== null);
+
+        return <Carousel images={images} />;
+      }
+      return domNode;
+    },
+  });
+
+  return parsedContent;
 };
 
 const page: React.FC<Params> = async ({ params }) => {
