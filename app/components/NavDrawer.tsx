@@ -32,22 +32,28 @@ export const NavDrawer = () => {
               {`Accueil`}
             </a>
             <a
-              href="/actualites"
+              href="/services"
               className="text-lg font-medium text-gray-100 hover:text-white"
             >
-              {`Actualités`}
-            </a>
-            <a
-              href="/projets"
-              className="text-lg font-medium text-gray-100 hover:text-white"
-            >
-              {`Projets`}
+              {`Nos services`}
             </a>
             <a
               href="/realisations"
               className="text-lg font-medium text-gray-100 hover:text-white"
             >
               {`Réalisations`}
+            </a>
+            <a
+              href="/engagements-et-valeurs"
+              className="text-lg font-medium text-gray-100 hover:text-white"
+            >
+              {`Engagement & valeurs`}
+            </a>
+            <a
+              href="/avis"
+              className="text-lg font-medium text-gray-100 hover:text-white"
+            >
+              {`Avis`}
             </a>
             <a
               href="/contact"

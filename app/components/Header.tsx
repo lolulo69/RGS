@@ -21,22 +21,28 @@ export const Header = () => {
           Accueil
         </a>
         <a
-          href="/actualites"
-          className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/actualites" ? "font-medium" : ""}`}
+          href="/services"
+          className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/services" ? "font-medium" : ""}`}
         >
-          Actualités
-        </a>
-        <a
-          href="/projets"
-          className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/projets" ? "font-medium" : ""}`}
-        >
-          Projets
+          Nos services
         </a>
         <a
           href="/realisations"
           className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/realisations" ? "font-medium" : ""}`}
         >
           Réalisations
+        </a>
+        <a
+          href="/engagements-et-valeurs"
+          className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/engagements-et-valeurs" ? "font-medium" : ""}`}
+        >
+          Engagement & valeurs
+        </a>
+        <a
+          href="/avis"
+          className={`rounded-sm p-3 px-5 text-gray-200 transition-colors ease-in hover:bg-sky-900 ${pathname === "/avis" ? "font-medium" : ""}`}
+        >
+          Avis
         </a>
         <a
           href="/contact"

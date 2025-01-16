@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="w-full bg-gray-100">
-      <div className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 xl:max-w-7xl">
+    <section id="testimonials" className="w-full">
+      <div className="mx-auto flex max-w-[90%] flex-col items-start pb-8 xl:max-w-7xl">
         <h2 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
           {`Ils parlent de nous`}
         </h2>

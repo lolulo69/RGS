@@ -9,7 +9,7 @@ const page = async () => {
   return (
     <main className="mx-auto flex max-w-[90%] flex-col gap-8 pb-16 xl:max-w-7xl">
       <h1 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
-        {`Réalisations`}
+        {`Projets réalisés`}
       </h1>
       {posts.map((post: Post) => (
         <PostSmallCard post={post} category={CATEGORY} key={post.slug} />

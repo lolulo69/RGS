@@ -12,15 +12,23 @@ export const Footer = () => {
         <p>{"RGS - Bâtir l'avenir, démolir les limites."}</p>
         <p>© 2024 RGS. Tous droits réservés.</p>
       </div>
+      <div className="flex flex-col gap-2">
+        <a href="/mentions-legales" className="underline">
+          Mentions légales
+        </a>
+        <a href="/politique-de-confidentialite" className="underline">
+          Politique de confidentialité
+        </a>
+      </div>
       <div className="flex flex-col justify-center gap-2 text-center lg:text-left">
         <p>
           Adresse :{" "}
           <a
-            href="https://www.google.com/maps/search/?api=1&query=RGS+19+rue+Bernard+Ruyant+59110+La+Madeleine"
+            href="https://www.google.com/maps/search/?api=1&query=RGS+44+rue+du+Cimetière+59110+La+Madeleine"
             target="_blank"
             className="underline"
           >
-            19 rue Bernard Ruyant, 59110 La Madeleine
+            44 Rue du Cimetière, 59110 La Madeleine
           </a>
         </p>
         <p>

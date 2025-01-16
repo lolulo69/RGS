@@ -14,12 +14,18 @@ export const ProjectsSection = async () => {
   const posts = await fetchPosts("projets");
   return (
     <section
-      id="projets"
-      className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-24 xl:max-w-7xl"
+      id="realisations"
+      className="mx-auto flex max-w-[90%] flex-col items-start py-16 pb-12 xl:max-w-7xl"
     >
       <h2 className="text-left font-title text-4xl leading-tight text-gray-800 lg:text-6xl">
-        {`Nos projets`}
+        {`Découvrez nos Réalisations`}
       </h2>
+      <p className="mt-4 text-gray-600 lg:text-lg">
+        Découvrez nos projets récents et voyez par vous-même la qualité de notre
+        travail. De la démolition intérieure à la pose de menuiseries
+        extérieures, chaque projet est un témoignage de notre engagement envers
+        l’excellence.
+      </p>
       <div className="mt-8 flex flex-row flex-wrap items-center justify-between gap-4">
         {posts
           .reverse()
