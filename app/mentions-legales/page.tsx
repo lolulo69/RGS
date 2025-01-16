@@ -29,7 +29,7 @@ const MentionsLegales = () => {
 
         <div>
           <h2 className="mb-4 text-2xl font-semibold text-gray-800">
-            Informations sur l'hébergeur du site
+            Informations sur l&apos;hébergeur du site
           </h2>
           <p className="whitespace-pre-line text-gray-600">
             • Nom de l’hébergeur : Vercel
