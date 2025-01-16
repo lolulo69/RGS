@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import person from "../images/person.jpg";
+import logo from "../images/logo.png";
 import { ContactForm } from "../components/ContactForm";
 
 const page: React.FC = () => {
@@ -10,13 +10,13 @@ const page: React.FC = () => {
         Contactez-nous
       </h1>
       <div className="flex h-fit flex-col justify-between gap-6 pb-20 lg:my-8 lg:flex-row lg:items-start">
-        <div className="flex max-h-[400px] flex-col gap-2 lg:max-h-none">
+        <div className="flex max-h-[300px] flex-col gap-2 lg:max-h-none">
           <Image
-            src={person}
-            alt="Photo de la personne en charge des contacts chez RDS"
-            width={400}
-            height={400}
-            className="max-h-[400px] w-full object-cover"
+            src={logo}
+            alt="Logo de l'entreprise RGS"
+            width={300}
+            height={300}
+            className="max-h-[300px] w-full object-cover lg:max-h-[400px]"
           />
         </div>
 
